@@ -4,10 +4,11 @@ import { currentUser } from '@clerk/nextjs/server'
 import React from 'react'
 import UnAuthenticatedSidebar from './UnAuthenticatedSidebar';
 import { gettUserByClerkId } from '@/actions/user.action';
-import { Link, MapPinIcon, LinkIcon } from 'lucide-react';
 import { Card, CardContent } from '../ui/card';
 import { Avatar, AvatarImage } from '../ui/avatar';
 import { Separator } from '../ui/separator';
+import Link from 'next/link';
+import { LinkIcon, MapPinIcon } from 'lucide-react';
 
 async function Sidebar() {
   const authuser = await currentUser();
