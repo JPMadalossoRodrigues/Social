@@ -4,7 +4,7 @@ import React, { use } from 'react'
 import FollowButton from './FollowButton'
 import { getRandomUsers } from '@/actions/user.action'
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
-import { Link } from 'lucide-react';
+import Link from 'next/link';
 import { Avatar, AvatarImage } from './ui/avatar';
 
 async function WhoToFollow() {
